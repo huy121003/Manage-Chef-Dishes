@@ -12,6 +12,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
 {
     public partial class LoginForm : Form
     {
+        Modify.UseLoginAdmin useLoginAdmin=new Modify.UseLoginAdmin();
         public LoginForm()
         {
             InitializeComponent();
@@ -41,11 +42,30 @@ namespace Manage_Chef_Dishes.AllForm.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string username = txtUser.Text;
+            string password = txtPass.Text;
+            if (username.Trim() == "") { MessageBox.Show("Vui lòng nhập tên tài khoản"); }
+            else if (password.Trim() == "") {MessageBox.Show("Vui lòng nhập mật khẩu");  }
+            else
+            {
+                string query="Select * from LoginAdmin where UserName ='"+username+"' and PassWord ='"+password +"'";
+                if(useLoginAdmin.loginAdmins(query).Count!=0)
+                {
+                    MessageBox.Show("Đăng nhập thành công!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
+                    MainForm mf= new MainForm();
+                    mf.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtUser.Text = "UserName";
+                    txtPass.Text = "PassWord";
+                    txtUser.ForeColor = Color.SeaGreen;
+                }
 
-            this.Hide();
-            MainForm mf = new MainForm();
-            mf.ShowDialog();
-            this.Close();
+            }
         }
 
         private void txtUser_Enter(object sender, EventArgs e)
@@ -53,7 +73,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
             if(txtUser.Text == "UserName")
             {
                 txtUser.Text = "";
-                txtUser.ForeColor = Color.White;
+                txtUser.ForeColor = Color.Black;
             }
         }
 
@@ -71,7 +91,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
             if (txtPass.Text == "PassWord")
             {
                 txtPass.Text = "";
-                txtPass.ForeColor = Color.White;
+                txtPass.ForeColor = Color.Black;
             }
         }
 

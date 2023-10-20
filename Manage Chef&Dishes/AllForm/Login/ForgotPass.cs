@@ -10,8 +10,10 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Manage_Chef_Dishes.AllForm.Login
 {
+
     public partial class ForgotPass : Form
     {
+        Modify.UseLoginAdmin useLoginAdmin = new Modify.UseLoginAdmin();
         public ForgotPass()
         {
             InitializeComponent();
@@ -23,20 +25,20 @@ namespace Manage_Chef_Dishes.AllForm.Login
         }
         private void txtMail_Enter(object sender, EventArgs e)
         {
-            if (txtMail.Text == "Email")
+            if (txtEmail.Text == "Email")
             {
-                txtMail.Text = "";
-                txtMail.ForeColor = Color.White;
+                txtEmail.Text = "";
+                txtEmail.ForeColor = Color.Black;
             }
         }
 
         private void txtMail_Leave(object sender, EventArgs e)
         {
 
-            if (txtMail.Text == "")
+            if (txtEmail.Text == "")
             {
-                txtMail.Text = "Email";
-                txtMail.ForeColor = Color.SeaGreen;
+                txtEmail.Text = "Email";
+                txtEmail.ForeColor = Color.SeaGreen;
             }
         }
 
@@ -47,5 +49,27 @@ namespace Manage_Chef_Dishes.AllForm.Login
             lg.ShowDialog();
             this.Close();
         }
+
+        private void btnGetPass_Click(object sender, EventArgs e)
+        {
+            string email=txtEmail.Text;
+            if (email.Trim() == "") { MessageBox.Show("Vui lòng nhập Email đăng kí"); }
+            else
+            {
+                string query = "Select * from LoginAdmin where Email='" + email + "'";
+                if (useLoginAdmin.loginAdmins(query).Count != 0)
+                {
+                    lbPass.ForeColor = Color.SeaGreen;
+                    lbPass.Text = "Your PassWord is:  " + useLoginAdmin.loginAdmins(query)[0].Password;
+                }
+                else
+                {
+                    lbPass.Text = "Email chưa được đăng kí hoặc không đúng! ";
+
+                }
+            }
+        }
+
+   
     }
 }

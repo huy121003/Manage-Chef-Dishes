@@ -91,6 +91,33 @@
     <Compile Include="AllForm\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectDataBase.cs" />
+    <Compile Include="Models\LoginAdmin.cs" />
+    <Compile Include="Models\tChiTietThucDon.cs" />
+    <Compile Include="Models\tCongDung.cs" />
+    <Compile Include="Models\tDauBep.cs" />
+    <Compile Include="Models\tDauBepMonAn.cs" />
+    <Compile Include="Models\tDonViTinh.cs" />
+    <Compile Include="Models\tKhachHang.cs" />
+    <Compile Include="Models\tLoai.cs" />
+    <Compile Include="Models\tMonAn.cs" />
+    <Compile Include="Models\tNguyenLieu.cs" />
+    <Compile Include="Models\tNguyenLieuMonAn.cs" />
+    <Compile Include="Models\tThucDon.cs" />
+    <Compile Include="Models\tXepLoai.cs" />
+    <Compile Include="Modify\UseLoginAdmin.cs" />
+    <Compile Include="Modify\UsetChiTietThucDon.cs" />
+    <Compile Include="Modify\UsetCongDung.cs" />
+    <Compile Include="Modify\UsetDauBep.cs" />
+    <Compile Include="Modify\UsetDauBepMonAn.cs" />
+    <Compile Include="Modify\UsetDonViTinh.cs" />
+    <Compile Include="Modify\UsetKhachHang.cs" />
+    <Compile Include="Modify\UsetLoai.cs" />
+    <Compile Include="Modify\UsetMonAn.cs" />
+    <Compile Include="Modify\UsetNguyenLieu.cs" />
+    <Compile Include="Modify\UsetNguyenLieuMonAn.cs" />
+    <Compile Include="Modify\UsetThucDon.cs" />
+    <Compile Include="Modify\UsetXepLoai.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AllForm\Login\Create.resx">
@@ -131,9 +158,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
