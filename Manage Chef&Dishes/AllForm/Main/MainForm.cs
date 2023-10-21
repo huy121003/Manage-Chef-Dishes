@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Manage_Chef_Dishes.AllForm.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -121,6 +122,14 @@ namespace Manage_Chef_Dishes
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             openChildForm(new DashboardForm());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm lg = new LoginForm();
+            lg.ShowDialog();
+            this.Close();
         }
     }
 }

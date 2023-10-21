@@ -109,5 +109,10 @@ namespace Manage_Chef_Dishes.AllForm.Login
         {
             Application.Exit();
         }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
