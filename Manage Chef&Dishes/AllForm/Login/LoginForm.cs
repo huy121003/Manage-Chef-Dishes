@@ -60,8 +60,8 @@ namespace Manage_Chef_Dishes.AllForm.Login
                 else
                 {
                     MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtUser.Text = "UserName";
-                    txtPass.Text = "PassWord";
+                    txtUser.Text = "";
+                    txtPass.Text = "";
                     txtUser.ForeColor = Color.SeaGreen;
                 }
 
@@ -76,6 +76,11 @@ namespace Manage_Chef_Dishes.AllForm.Login
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter) btnLogin_Click(sender, e);
         }
     }
 }

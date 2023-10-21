@@ -19,12 +19,6 @@ namespace Manage_Chef_Dishes.AllForm.Login
             InitializeComponent();
         }
 
-        private void ForgotPass_Load(object sender, EventArgs e)
-        {
-
-        }
-       
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -42,20 +36,27 @@ namespace Manage_Chef_Dishes.AllForm.Login
                 string query = "Select * from LoginAdmin where Email='" + email + "'";
                 if (useLoginAdmin.loginAdmins(query).Count != 0)
                 {
-                    lbPass.ForeColor = Color.SeaGreen;
+                    txtEmail.Text = "";
+                    lbPass.ForeColor = Color.BlueViolet;
+                    lbUser.ForeColor = Color.BlueViolet;
                     lbPass.Text = "Your PassWord is:  " + useLoginAdmin.loginAdmins(query)[0].Password;
+                    lbUser.Text = "Your UserName is:  " + useLoginAdmin.loginAdmins(query)[0].UserName;
                 }
                 else
-                {
+                { 
+                    txtEmail.Text = "";
                     lbPass.Text = "Email chưa được đăng kí hoặc không đúng! ";
+                    
 
                 }
             }
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void ForgotPassForm_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter) btnGetPass_Click(sender, e); 
         }
+
+       
     }
 }

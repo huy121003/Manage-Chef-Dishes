@@ -159,10 +159,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AllForm\Chefs\" />
-    <Folder Include="AllForm\Dishes\" />
-    <Folder Include="AllForm\Setting\" />
-    <Folder Include="AllForm\Statistic\" />
+    <Folder Include="AllForm\Main\Chefs\" />
+    <Folder Include="AllForm\Main\Dishes\" />
+    <Folder Include="AllForm\Main\Setting\" />
+    <Folder Include="AllForm\Main\Statistic\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -187,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Res\iconexit.png" />
+    <None Include="Res\chefgif.gif" />
     <Content Include="Res\iconmail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
