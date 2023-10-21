@@ -66,6 +66,7 @@
             this.txtPass.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtPass.Location = new System.Drawing.Point(104, 296);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPass.MaxLength = 10;
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -78,6 +79,7 @@
             this.txtUser.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtUser.Location = new System.Drawing.Point(104, 244);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.MaxLength = 10;
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(273, 30);
@@ -89,6 +91,7 @@
             this.txtEmail.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtEmail.Location = new System.Drawing.Point(104, 390);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(273, 30);
@@ -158,6 +161,7 @@
             this.txtEnterPass.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtEnterPass.Location = new System.Drawing.Point(104, 340);
             this.txtEnterPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEnterPass.MaxLength = 10;
             this.txtEnterPass.Multiline = true;
             this.txtEnterPass.Name = "txtEnterPass";
             this.txtEnterPass.PasswordChar = '*';

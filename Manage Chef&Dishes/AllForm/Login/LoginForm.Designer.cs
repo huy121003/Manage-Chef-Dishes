@@ -50,6 +50,7 @@
             this.txtUser.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtUser.Location = new System.Drawing.Point(121, 257);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.MaxLength = 10;
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(245, 30);
@@ -64,6 +65,7 @@
             this.txtPass.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtPass.Location = new System.Drawing.Point(121, 315);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPass.MaxLength = 10;
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
