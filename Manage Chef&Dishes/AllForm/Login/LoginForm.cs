@@ -26,7 +26,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
         private void llbForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            ForgotPass fg =new ForgotPass();
+            ForgotPassForm fg =new ForgotPassForm();
             fg.ShowDialog();
             this.Close();
             
@@ -35,7 +35,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
         private void llbCreate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Create cr =new Create();
+            CreateForm cr =new CreateForm();
             cr.ShowDialog();
             this.Close();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Manage_Chef_Dishes.AllForm.Login
 {
-    partial class Create
+    partial class CreateForm
     {
         /// <summary>
         /// Required designer variable.

@@ -10,13 +10,9 @@ namespace Manage_Chef_Dishes.Models
     {
         private string macongdung;
         private string tencongdung;
-        
-
-
         public tCongDung()
         {
         }
-
         public tCongDung(string macongdung, string tencongdung)
         {
             this.macongdung = macongdung;

@@ -12,10 +12,10 @@ using System.Text.RegularExpressions;
 
 namespace Manage_Chef_Dishes.AllForm.Login
 {
-    public partial class Create : Form
+    public partial class CreateForm : Form
     {
         Modify.UseLoginAdmin useLoginAdmin = new Modify.UseLoginAdmin();
-        public Create()
+        public CreateForm()
         {
             InitializeComponent();
         }

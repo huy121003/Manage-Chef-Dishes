@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllForm\Login\Create.cs">
+    <Compile Include="AllForm\Login\CreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllForm\Login\Create.Designer.cs">
-      <DependentUpon>Create.cs</DependentUpon>
+    <Compile Include="AllForm\Login\CreateForm.Designer.cs">
+      <DependentUpon>CreateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllForm\Login\ForgotPass.cs">
+    <Compile Include="AllForm\Login\ForgotPassForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllForm\Login\ForgotPass.Designer.cs">
-      <DependentUpon>ForgotPass.cs</DependentUpon>
+    <Compile Include="AllForm\Login\ForgotPassForm.Designer.cs">
+      <DependentUpon>ForgotPassForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AllForm\Login\LoginForm.cs">
       <SubType>Form</SubType>
@@ -120,11 +120,11 @@
     <Compile Include="Modify\UsetXepLoai.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AllForm\Login\Create.resx">
-      <DependentUpon>Create.cs</DependentUpon>
+    <EmbeddedResource Include="AllForm\Login\CreateForm.resx">
+      <DependentUpon>CreateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllForm\Login\ForgotPass.resx">
-      <DependentUpon>ForgotPass.cs</DependentUpon>
+    <EmbeddedResource Include="AllForm\Login\ForgotPassForm.resx">
+      <DependentUpon>ForgotPassForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForm\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

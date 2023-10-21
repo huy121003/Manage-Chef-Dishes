@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 namespace Manage_Chef_Dishes.AllForm.Login
 {
 
-    public partial class ForgotPass : Form
+    public partial class ForgotPassForm : Form
     {
         Modify.UseLoginAdmin useLoginAdmin = new Modify.UseLoginAdmin();
-        public ForgotPass()
+        public ForgotPassForm()
         {
             InitializeComponent();
         }

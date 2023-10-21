@@ -1,6 +1,6 @@
 ﻿namespace Manage_Chef_Dishes.AllForm.Login
 {
-    partial class ForgotPass
+    partial class ForgotPassForm
     {
         /// <summary>
         /// Required designer variable.
