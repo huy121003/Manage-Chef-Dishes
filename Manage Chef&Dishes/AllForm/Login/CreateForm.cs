@@ -101,5 +101,46 @@ namespace Manage_Chef_Dishes.AllForm.Login
         {
             if(e.KeyCode == Keys.Enter) btnCreate_Click(sender, e);
         }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
+
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
+
+        private void txtEnterPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
+
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
     }
 }

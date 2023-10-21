@@ -57,6 +57,7 @@
             this.txtUser.Size = new System.Drawing.Size(245, 30);
             this.txtUser.TabIndex = 2;
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // txtPass
             // 
@@ -70,6 +71,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(245, 30);
             this.txtPass.TabIndex = 4;
+            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // btnLogin
             // 

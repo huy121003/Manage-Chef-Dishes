@@ -82,5 +82,23 @@ namespace Manage_Chef_Dishes.AllForm.Login
         {
             if(e.KeyCode == Keys.Enter) btnLogin_Click(sender, e);
         }
+
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
+
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
     }
 }

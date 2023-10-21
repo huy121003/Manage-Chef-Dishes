@@ -64,6 +64,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(273, 30);
             this.txtPass.TabIndex = 13;
+            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // txtUser
             // 
@@ -76,6 +77,8 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(273, 30);
             this.txtUser.TabIndex = 11;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // txtEmail
             // 
@@ -88,6 +91,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(273, 30);
             this.txtEmail.TabIndex = 19;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // btnCreate
             // 
@@ -115,6 +119,7 @@
             this.txtEnterPass.PasswordChar = '*';
             this.txtEnterPass.Size = new System.Drawing.Size(273, 30);
             this.txtEnterPass.TabIndex = 22;
+            this.txtEnterPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnterPass_KeyPress);
             // 
             // btnBack
             // 

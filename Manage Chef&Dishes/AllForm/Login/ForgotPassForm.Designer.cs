@@ -35,7 +35,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbUser = new System.Windows.Forms.Label();
-            this.lbPass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,13 +50,14 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(298, 36);
             this.txtEmail.TabIndex = 11;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // btnGetPass
             // 
             this.btnGetPass.BackColor = System.Drawing.Color.LightCoral;
             this.btnGetPass.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetPass.ForeColor = System.Drawing.Color.Wheat;
-            this.btnGetPass.Location = new System.Drawing.Point(364, 407);
+            this.btnGetPass.Location = new System.Drawing.Point(373, 426);
             this.btnGetPass.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetPass.Name = "btnGetPass";
             this.btnGetPass.Size = new System.Drawing.Size(176, 55);
@@ -71,7 +71,7 @@
             this.btnBack.BackColor = System.Drawing.Color.LightCoral;
             this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Wheat;
-            this.btnBack.Location = new System.Drawing.Point(42, 408);
+            this.btnBack.Location = new System.Drawing.Point(35, 424);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(176, 54);
@@ -121,16 +121,6 @@
             this.lbUser.Size = new System.Drawing.Size(0, 37);
             this.lbUser.TabIndex = 34;
             // 
-            // lbPass
-            // 
-            this.lbPass.AutoSize = true;
-            this.lbPass.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPass.Location = new System.Drawing.Point(62, 352);
-            this.lbPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(0, 37);
-            this.lbPass.TabIndex = 33;
-            // 
             // ForgotPassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,7 +129,6 @@
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(591, 503);
             this.Controls.Add(this.lbUser);
-            this.Controls.Add(this.lbPass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBack);
@@ -155,6 +144,7 @@
             this.Name = "ForgotPassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPass";
+            this.Load += new System.EventHandler(this.ForgotPassForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ForgotPassForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -171,6 +161,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbUser;
-        private System.Windows.Forms.Label lbPass;
     }
 }
