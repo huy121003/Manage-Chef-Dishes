@@ -322,6 +322,7 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(840, 513);
             this.pnBody.TabIndex = 2;
+            this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
             // 
             // MainForm
             // 

@@ -132,5 +132,10 @@ namespace Manage_Chef_Dishes
             this.Close();
         }
 
+        private void pnBody_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        //Giang 123
     }
 }
