@@ -150,7 +150,7 @@
             this.btnCreate.BackColor = System.Drawing.Color.LightCoral;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.Wheat;
-            this.btnCreate.Location = new System.Drawing.Point(195, 446);
+            this.btnCreate.Location = new System.Drawing.Point(222, 446);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(136, 46);
