@@ -19,6 +19,6 @@ namespace Manage_Chef_Dishes
             return new SqlConnection(strConnection);
         }
        
-            
+       //hieu dey     
     }
 }
