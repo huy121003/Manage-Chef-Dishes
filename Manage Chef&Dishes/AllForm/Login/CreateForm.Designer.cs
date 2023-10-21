@@ -41,6 +41,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.eventLog1 = new System.Diagnostics.EventLog();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,10 +57,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(115, 185);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(223, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 43);
+            this.label1.Size = new System.Drawing.Size(152, 45);
             this.label1.TabIndex = 14;
             this.label1.Text = "CREATE";
             // 
@@ -64,7 +68,7 @@
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtPass.Location = new System.Drawing.Point(104, 296);
+            this.txtPass.Location = new System.Drawing.Point(278, 296);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPass.MaxLength = 10;
             this.txtPass.Multiline = true;
@@ -77,7 +81,7 @@
             // 
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtUser.Location = new System.Drawing.Point(104, 244);
+            this.txtUser.Location = new System.Drawing.Point(278, 247);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUser.MaxLength = 10;
             this.txtUser.Multiline = true;
@@ -89,7 +93,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtEmail.Location = new System.Drawing.Point(104, 390);
+            this.txtEmail.Location = new System.Drawing.Point(278, 390);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Multiline = true;
@@ -100,7 +104,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Manage_Chef_Dishes.Properties.Resources.iconmail;
-            this.pictureBox4.Location = new System.Drawing.Point(38, 390);
+            this.pictureBox4.Location = new System.Drawing.Point(23, 390);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(29, 30);
@@ -111,7 +115,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Manage_Chef_Dishes.Properties.Resources.iconlock;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 296);
+            this.pictureBox3.Location = new System.Drawing.Point(23, 296);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 30);
@@ -122,7 +126,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Manage_Chef_Dishes.Properties.Resources.iconavatar;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 244);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 244);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 30);
@@ -133,7 +137,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Manage_Chef_Dishes.Properties.Resources.avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(104, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(195, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 201);
@@ -146,7 +150,7 @@
             this.btnCreate.BackColor = System.Drawing.Color.LightCoral;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.Wheat;
-            this.btnCreate.Location = new System.Drawing.Point(144, 446);
+            this.btnCreate.Location = new System.Drawing.Point(195, 446);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(136, 46);
@@ -159,7 +163,7 @@
             // 
             this.txtEnterPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEnterPass.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtEnterPass.Location = new System.Drawing.Point(104, 340);
+            this.txtEnterPass.Location = new System.Drawing.Point(278, 340);
             this.txtEnterPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEnterPass.MaxLength = 10;
             this.txtEnterPass.Multiline = true;
@@ -171,7 +175,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Manage_Chef_Dishes.Properties.Resources.iconlock;
-            this.pictureBox5.Location = new System.Drawing.Point(38, 340);
+            this.pictureBox5.Location = new System.Drawing.Point(23, 340);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(29, 30);
@@ -184,7 +188,7 @@
             this.btnBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Wheat;
-            this.btnBack.Location = new System.Drawing.Point(361, 2);
+            this.btnBack.Location = new System.Drawing.Point(519, 11);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 34);
@@ -197,13 +201,57 @@
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(58, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 27);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Tên đăng nhập";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(58, 340);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(199, 27);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Nhập lại mật khẩu";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(58, 296);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 27);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Mật khẩu";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(58, 390);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 27);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Email";
+            // 
             // CreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(421, 503);
+            this.ClientSize = new System.Drawing.Size(591, 503);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtEnterPass);
             this.Controls.Add(this.pictureBox5);
@@ -249,5 +297,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnBack;
         private System.Diagnostics.EventLog eventLog1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

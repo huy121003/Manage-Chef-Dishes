@@ -68,43 +68,6 @@ namespace Manage_Chef_Dishes.AllForm.Login
             }
         }
 
-        private void txtUser_Enter(object sender, EventArgs e)
-        {
-            if(txtUser.Text == "UserName")
-            {
-                txtUser.Text = "";
-                txtUser.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtUser_Leave(object sender, EventArgs e)
-        {
-            if (txtUser.Text == "")
-            {
-                txtUser.Text = "UserName";
-                txtUser.ForeColor = Color.SeaGreen;
-            }
-        }
-
-        private void txtPass_Enter(object sender, EventArgs e)
-        {
-            if (txtPass.Text == "PassWord")
-            {
-                txtPass.Text = "";
-                txtPass.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtPass_Leave(object sender, EventArgs e)
-        {
-
-            if (txtPass.Text == "")
-            {
-                txtPass.Text = "PassWord";
-                txtPass.ForeColor = Color.SeaGreen;
-            }
-        }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -35,6 +35,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,16 +44,14 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtEmail.Location = new System.Drawing.Point(83, 242);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Location = new System.Drawing.Point(179, 243);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(296, 36);
+            this.txtEmail.Size = new System.Drawing.Size(304, 36);
             this.txtEmail.TabIndex = 11;
-            this.txtEmail.Text = "Email";
-            this.txtEmail.Enter += new System.EventHandler(this.txtMail_Enter);
-            this.txtEmail.Leave += new System.EventHandler(this.txtMail_Leave);
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lbPass
             // 
@@ -69,8 +68,8 @@
             this.btnGetPass.BackColor = System.Drawing.Color.LightCoral;
             this.btnGetPass.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetPass.ForeColor = System.Drawing.Color.Wheat;
-            this.btnGetPass.Location = new System.Drawing.Point(119, 393);
-            this.btnGetPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGetPass.Location = new System.Drawing.Point(179, 397);
+            this.btnGetPass.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetPass.Name = "btnGetPass";
             this.btnGetPass.Size = new System.Drawing.Size(176, 55);
             this.btnGetPass.TabIndex = 21;
@@ -81,8 +80,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Manage_Chef_Dishes.Properties.Resources.iconmail;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 242);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 243);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,8 +93,8 @@
             this.btnBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Wheat;
-            this.btnBack.Location = new System.Drawing.Point(348, 1);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Location = new System.Drawing.Point(449, 13);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(57, 38);
             this.btnBack.TabIndex = 24;
@@ -106,7 +105,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Manage_Chef_Dishes.Properties.Resources.avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(163, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 201);
@@ -119,12 +118,22 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 185);
+            this.label1.Location = new System.Drawing.Point(114, 193);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(300, 30);
             this.label1.TabIndex = 26;
             this.label1.Text = "FORGOT PASSWORD";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(84, 245);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 25);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Email";
             // 
             // ForgotPassForm
             // 
@@ -132,7 +141,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(408, 503);
+            this.ClientSize = new System.Drawing.Size(519, 503);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBack);
@@ -142,7 +152,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ForgotPassForm";
@@ -164,5 +174,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

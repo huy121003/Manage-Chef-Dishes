@@ -94,6 +94,8 @@ namespace Manage_Chef_Dishes.AllForm.Login
             LoginForm lg = new LoginForm();
             lg.ShowDialog();
             this.Close();
-        } 
+        }
+
+       
     }
 }

@@ -158,7 +158,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AllForm\Chefs\" />
+    <Folder Include="AllForm\Dishes\" />
+    <Folder Include="AllForm\Setting\" />
+    <Folder Include="AllForm\Statistic\" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

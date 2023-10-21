@@ -38,6 +38,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,23 +50,21 @@
             this.txtUser.BackColor = System.Drawing.SystemColors.Window;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtUser.Location = new System.Drawing.Point(121, 257);
+            this.txtUser.Location = new System.Drawing.Point(229, 257);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUser.MaxLength = 10;
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(245, 30);
             this.txtUser.TabIndex = 2;
-            this.txtUser.Text = "UserName";
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
-            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
+            
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtPass.Location = new System.Drawing.Point(121, 315);
+            this.txtPass.Location = new System.Drawing.Point(229, 315);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPass.MaxLength = 10;
             this.txtPass.Multiline = true;
@@ -72,9 +72,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(245, 30);
             this.txtPass.TabIndex = 4;
-            this.txtPass.Text = "PassWord";
-            this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
-            this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
+           
             // 
             // btnLogin
             // 
@@ -82,7 +80,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.LightCoral;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Wheat;
-            this.btnLogin.Location = new System.Drawing.Point(157, 421);
+            this.btnLogin.Location = new System.Drawing.Point(192, 425);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(121, 46);
@@ -96,7 +94,7 @@
             this.llbForgot.AutoSize = true;
             this.llbForgot.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbForgot.LinkColor = System.Drawing.Color.SlateGray;
-            this.llbForgot.Location = new System.Drawing.Point(52, 370);
+            this.llbForgot.Location = new System.Drawing.Point(71, 370);
             this.llbForgot.Name = "llbForgot";
             this.llbForgot.Size = new System.Drawing.Size(106, 17);
             this.llbForgot.TabIndex = 6;
@@ -109,7 +107,7 @@
             this.llbCreate.AutoSize = true;
             this.llbCreate.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbCreate.LinkColor = System.Drawing.Color.SlateGray;
-            this.llbCreate.Location = new System.Drawing.Point(275, 370);
+            this.llbCreate.Location = new System.Drawing.Point(365, 370);
             this.llbCreate.Name = "llbCreate";
             this.llbCreate.Size = new System.Drawing.Size(95, 17);
             this.llbCreate.TabIndex = 7;
@@ -121,7 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(139, 190);
+            this.label1.Location = new System.Drawing.Point(184, 190);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 43);
             this.label1.TabIndex = 15;
@@ -130,7 +128,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Manage_Chef_Dishes.Properties.Resources.iconlock;
-            this.pictureBox3.Location = new System.Drawing.Point(56, 315);
+            this.pictureBox3.Location = new System.Drawing.Point(35, 315);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 30);
@@ -141,7 +139,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Manage_Chef_Dishes.Properties.Resources.iconavatar;
-            this.pictureBox2.Location = new System.Drawing.Point(56, 257);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 257);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 30);
@@ -152,7 +150,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Manage_Chef_Dishes.Properties.Resources.avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(157, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 201);
@@ -165,7 +163,7 @@
             this.btnBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Wheat;
-            this.btnBack.Location = new System.Drawing.Point(363, 2);
+            this.btnBack.Location = new System.Drawing.Point(450, 11);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(57, 38);
@@ -174,13 +172,35 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 24);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Tên đăng nhập";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(70, 321);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 24);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Mật khẩu";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(421, 503);
+            this.ClientSize = new System.Drawing.Size(519, 503);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
@@ -219,5 +239,7 @@
         private System.Windows.Forms.LinkLabel llbCreate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

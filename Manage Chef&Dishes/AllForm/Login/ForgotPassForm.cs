@@ -23,24 +23,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
         {
 
         }
-        private void txtMail_Enter(object sender, EventArgs e)
-        {
-            if (txtEmail.Text == "Email")
-            {
-                txtEmail.Text = "";
-                txtEmail.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtMail_Leave(object sender, EventArgs e)
-        {
-
-            if (txtEmail.Text == "")
-            {
-                txtEmail.Text = "Email";
-                txtEmail.ForeColor = Color.SeaGreen;
-            }
-        }
+       
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -70,6 +53,9 @@ namespace Manage_Chef_Dishes.AllForm.Login
             }
         }
 
-   
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
