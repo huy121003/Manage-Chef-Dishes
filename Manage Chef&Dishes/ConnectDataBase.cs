@@ -18,8 +18,7 @@ namespace Manage_Chef_Dishes
         {
             return new SqlConnection(strConnection);
         }
-        
-        // huy hieu da ma tich
+       
             
     }
 }
