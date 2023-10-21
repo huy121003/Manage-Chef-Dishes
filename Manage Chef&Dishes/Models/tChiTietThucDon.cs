@@ -15,8 +15,6 @@ namespace Manage_Chef_Dishes.Models
         private int soluong;
         private float thanhtien;
         
-
-
         public tChiTietThucDon()
         {
         }
