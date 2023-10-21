@@ -12,14 +12,13 @@ namespace Manage_Chef_Dishes
 {
      class ConnectDataBase
     {
-      
+      //
         public static String strConnection = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLDauBep_MonAn;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(strConnection);
         }
-        
-        // huy hieu da ma tich
+       
             
     }
 }

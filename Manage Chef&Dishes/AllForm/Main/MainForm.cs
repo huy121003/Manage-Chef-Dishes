@@ -131,7 +131,6 @@ namespace Manage_Chef_Dishes
             lg.ShowDialog();
             this.Close();
         }
-        //ko co gi
-        //huyhihi
+
     }
 }
