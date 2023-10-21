@@ -132,5 +132,6 @@ namespace Manage_Chef_Dishes
             this.Close();
         }
         //ko co gi
+        //Day la hieu
     }
 }
