@@ -1,4 +1,8 @@
 ﻿using Manage_Chef_Dishes.AllForm.Login;
+using Manage_Chef_Dishes.AllForm.Main.Dishes;
+using Manage_Chef_Dishes.AllForm.Main.Chefs;
+using Manage_Chef_Dishes.AllForm.Main.Statistic;
+using Manage_Chef_Dishes.AllForm.Main.Setting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Manage_Chef_Dishes
 {
@@ -119,10 +124,7 @@ namespace Manage_Chef_Dishes
 
 
         }
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DashboardForm());
-        }
+        
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -132,10 +134,31 @@ namespace Manage_Chef_Dishes
             this.Close();
         }
 
-        private void pnBody_Paint(object sender, PaintEventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new DashboardForm());
         }
-       
+
+        
+
+        private void btnChef_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChefsForm());
+        }
+
+        private void btnDish_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DishesForm());
+        }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StatisticForm());
+        }
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            openChildForm(new SettingForm());
+        }
+
     }
 }

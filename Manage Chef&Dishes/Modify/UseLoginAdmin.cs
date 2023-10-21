@@ -35,7 +35,7 @@ namespace Manage_Chef_Dishes.Modify
             }
             return loginAdmins;
         }
-        public void Command(string query) //dùng thêm dữ liệu
+        public void Command(string query) //dùng thêm sửa xóa
         { 
             using(SqlConnection sqlConnection=ConnectDataBase.GetSqlConnection())
             {

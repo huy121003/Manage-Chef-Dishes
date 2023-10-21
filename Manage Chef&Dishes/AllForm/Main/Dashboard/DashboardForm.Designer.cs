@@ -169,7 +169,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 301);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1090, 352);
+            this.panel5.Size = new System.Drawing.Size(1092, 352);
             this.panel5.TabIndex = 2;
             // 
             // panel9
@@ -229,7 +229,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1090, 80);
+            this.panel6.Size = new System.Drawing.Size(1092, 80);
             this.panel6.TabIndex = 3;
             // 
             // dateTimePicker1
@@ -243,12 +243,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 653);
+            this.ClientSize = new System.Drawing.Size(1092, 653);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Name = "DashboardForm";
             this.Text = "DashboardForm";
+            this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);

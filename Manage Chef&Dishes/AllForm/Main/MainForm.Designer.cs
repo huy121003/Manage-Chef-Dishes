@@ -204,6 +204,7 @@
             this.btnChef.Text = "             Chefs";
             this.btnChef.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChef.UseVisualStyleBackColor = false;
+            this.btnChef.Click += new System.EventHandler(this.btnChef_Click);
             // 
             // pnDish
             // 
@@ -230,6 +231,7 @@
             this.btnDish.Text = "             Dishes";
             this.btnDish.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDish.UseVisualStyleBackColor = false;
+            this.btnDish.Click += new System.EventHandler(this.btnDish_Click);
             // 
             // pnStatistic
             // 
@@ -256,6 +258,7 @@
             this.btnStatistic.Text = "             Statistic";
             this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.UseVisualStyleBackColor = false;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // pnSetting
             // 
@@ -282,6 +285,7 @@
             this.btnSettings.Text = "             Setting";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // pnLogout
             // 
@@ -322,7 +326,7 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(840, 513);
             this.pnBody.TabIndex = 2;
-            this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
+          
             // 
             // MainForm
             // 

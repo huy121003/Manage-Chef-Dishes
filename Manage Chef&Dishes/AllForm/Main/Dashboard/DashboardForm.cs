@@ -29,5 +29,10 @@ namespace Manage_Chef_Dishes
         {
 
         }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
