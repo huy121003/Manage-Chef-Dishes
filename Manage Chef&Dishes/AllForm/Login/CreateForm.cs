@@ -22,7 +22,7 @@ namespace Manage_Chef_Dishes.AllForm.Login
 
         private void Create_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         
