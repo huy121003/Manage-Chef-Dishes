@@ -1,4 +1,8 @@
 ﻿using Manage_Chef_Dishes.AllForm.Login;
+using Manage_Chef_Dishes.AllForm.Main.Dishes;
+using Manage_Chef_Dishes.AllForm.Main.Chefs;
+using Manage_Chef_Dishes.AllForm.Main.Statistic;
+using Manage_Chef_Dishes.AllForm.Main.Setting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Manage_Chef_Dishes
 {
     public partial class MainForm : Form
@@ -17,60 +22,6 @@ namespace Manage_Chef_Dishes
         {
             InitializeComponent();
         }
-
-       
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        bool sidebarExpand = true;
-        private void sidebarTransition_Tick(object sender, EventArgs e)
-        {
-            if(sidebarExpand)
-            {
-                sidebar.Width -= 5;
-                if(sidebar.Width<= 83)
-                {
-                    sidebarExpand = false;
-                    sidebarTransition.Stop();
-
-                    pnDashboard.Width = sidebar.Width;
-                    pnDish.Width = sidebar.Width;
-                    pnChef.Width = sidebar.Width;
-                    pnStatistic.Width = sidebar.Width;
-                    pnSetting.Width = sidebar.Width;
-                    pnLogout.Width = sidebar.Width;
-
-
-
-                }
-            }
-            else
-            {
-                sidebar.Width += 5;
-                if (sidebar.Width >= 250)
-                {
-                    sidebarExpand = true;
-                    sidebarTransition.Stop();
-
-                    pnDashboard.Width = sidebar.Width;
-                    pnDish.Width = sidebar.Width;
-                    pnChef.Width = sidebar.Width;
-                    pnStatistic.Width = sidebar.Width;
-                    pnSetting.Width = sidebar.Width;
-                    pnLogout.Width = sidebar.Width;
-
-                }
-            }
-        }
-
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            sidebarTransition.Start ();
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -80,27 +31,7 @@ namespace Manage_Chef_Dishes
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private bool isFullScreen = false;
-        private void btnNo_Click(object sender, EventArgs e)
-            
-        {
-            if (isFullScreen)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-
-            isFullScreen = !isFullScreen;
-        }
-
-        private void btnMinimize_MouseEnter(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(181, 181, 181);
-        }
-
+ 
         private Form currentFormChild;
         private void openChildForm(Form childForm)
         {
@@ -119,10 +50,7 @@ namespace Manage_Chef_Dishes
 
 
         }
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DashboardForm());
-        }
+        
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -132,10 +60,42 @@ namespace Manage_Chef_Dishes
             this.Close();
         }
 
-        private void pnBody_Paint(object sender, PaintEventArgs e)
+        private void btnDashboard_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new DashboardForm());
+        }
+        private void btnChef_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChefsForm());
+        }
+
+        private void btnDish_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new DishesForm());
+        }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StatisticForm());
+        }
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            openChildForm(new SettingForm());
+        }
+
+        private void btnInvoice_Click_1(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
         {
 
         }
-      
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+
 namespace Manage_Chef_Dishes.AllForm.Login
 {
 
@@ -26,7 +28,10 @@ namespace Manage_Chef_Dishes.AllForm.Login
             lg.ShowDialog();
             this.Close();
         }
-
+        public bool checkEmail(string em)
+        {
+            return Regex.IsMatch(em, @"^[a-zA-Z0-9_.]{1,30}@gmail.com(.vn|)$");
+        }
         private void btnGetPass_Click(object sender, EventArgs e)
         {
             string email=txtEmail.Text;
@@ -37,15 +42,15 @@ namespace Manage_Chef_Dishes.AllForm.Login
                 if (useLoginAdmin.loginAdmins(query).Count != 0)
                 {
                     txtEmail.Text = "";
-                    lbPass.ForeColor = Color.BlueViolet;
+                   
                     lbUser.ForeColor = Color.BlueViolet;
-                    lbPass.Text = "Your PassWord is:  " + useLoginAdmin.loginAdmins(query)[0].Password;
-                    lbUser.Text = "Your UserName is:  " + useLoginAdmin.loginAdmins(query)[0].UserName;
+                    lbUser.Text = "Tên đăng nhập :  " + useLoginAdmin.loginAdmins(query)[0].UserName  + " \nMật khẩu          :  " + useLoginAdmin.loginAdmins(query)[0].Password;
+                    //lbUser.Text = ;
                 }
                 else
                 { 
                     txtEmail.Text = "";
-                    lbPass.Text = "Email chưa được đăng kí hoặc không đúng! ";
+                    lbUser.Text = "Email chưa được đăng kí hoặc không đúng! ";
                     
 
                 }
@@ -57,6 +62,18 @@ namespace Manage_Chef_Dishes.AllForm.Login
             if (e.KeyCode == Keys.Enter) btnGetPass_Click(sender, e); 
         }
 
-       
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn không cho phép xuống dòng
+            }
+        }
+
+        private void ForgotPassForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
